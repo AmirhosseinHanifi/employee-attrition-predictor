@@ -1,6 +1,6 @@
 # Employee Attrition Predictor (Deep Learning + Gradio UI)
 
-This project uses a deep learning model to predict employee attrition based on HR data. It also provides a user-friendly Gradio interface to explore attrition risk based on employee features.
+The project uses a deep learning model to predict employee turnover based on HR data. It also provides a user-friendly Gradio interface to examine turnover risk based on employee characteristics, with the aim of preventing organizational shocks.
 
 ## 📊 Dataset
 
@@ -16,7 +16,7 @@ This dataset includes 35 features such as age, job role, overtime, monthly incom
 - Evaluation Metrics:
   - Accuracy
   - Precision / Recall / F1-score
-- Achieved **>92% accuracy** on test data
+- Achieved **>94% accuracy** on test data
 
 ## 🖥️ Web Interface (Gradio)
 
