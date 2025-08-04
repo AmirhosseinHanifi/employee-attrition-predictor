@@ -29,7 +29,7 @@ This dataset includes 35 features such as age, job role, overtime, monthly incom
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/employee-attrition-predictor.git
+git clone https://github.com/AmirhosseinHanifi/employee-attrition-predictor.git
 cd employee-attrition-predictor
 ```
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ### 3. Run the app
 
 ```bash
-python gradio_app.py
+python app.py
 ```
 
 Then open the link in your browser.
@@ -52,16 +52,11 @@ Then open the link in your browser.
 | File | Description |
 |------|-------------|
 | `model_trainer.py` | Builds, trains, and saves the deep learning model |
-| `gradio_app.py` | Loads the model and launches Gradio interface |
+| `app.py` | Loads the model and launches Gradio interface |
 | `WA_Fn-UseC_-HR-Employee-Attrition.csv` | HR dataset |
 | `requirements.txt` | Required Python libraries |
 | `README.md` | Project overview |
 
-## 📌 Future Work
-
-- Add SHAP for model interpretability
-- Train with more diverse HR datasets
-- Deploy with FastAPI or Streamlit
 
 ## 🔒 License
 
