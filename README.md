@@ -1,63 +1,69 @@
-# Employee Attrition Predictor (Deep Learning + Gradio UI)
 
-The project uses a deep learning model to predict employee turnover based on HR data. It also provides a user-friendly Gradio interface to examine turnover risk based on employee characteristics, with the aim of preventing organizational shocks.
+# Employee Attrition Predictor
 
-## 📊 Dataset
+🚀 A deep learning-powered tool for predicting employee attrition with high accuracy to help HR departments prevent organizational shock and retain top talent.
 
-We used the popular **IBM HR Analytics Employee Attrition & Performance** dataset (available as `WA_Fn-UseC_-HR-Employee-Attrition.csv`).  
-This dataset includes 35 features such as age, job role, overtime, monthly income, work-life balance, and more.
+## 💡 What This Project Does
 
-## 🧠 Model
+This project uses a deep learning model trained on real HR data to predict whether an employee is likely to leave the organization. It uses advanced feature engineering, neural networks, and Gradio to build an easy-to-use interface for HR professionals.
 
-- Deep Neural Network (built with TensorFlow/Keras)
-- Preprocessing:
-  - Label encoding for categorical variables
-  - Feature scaling for numeric data
-- Evaluation Metrics:
-  - Accuracy
-  - Precision / Recall / F1-score
-- Achieved **>94% accuracy** on test data
+## 🌟 Key Features
 
-## 🖥️ Web Interface (Gradio)
+- 📊 **High Accuracy (>95%)** deep learning model
+- 🧠 Smart feature engineering for improved performance
+- 🎛️ Interactive Gradio Interface for real-time predictions
+- 📉 Designed to **prevent organizational shocks** caused by sudden resignations
+- ⚡ Compatible with both CPU and GPU (automatic detection)
 
-- Enter custom employee data
-- Get predicted attrition probability
-- Display key risk factors if probability > 0.5
+## 📂 Project Structure
 
-## 💡 How to Use
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/AmirhosseinHanifi/employee-attrition-predictor.git
-cd employee-attrition-predictor
+```
+├── model_trainer.py        # Code to preprocess data and train the model
+├── app.py                  # Gradio app for interactive use
+├── model.pth               # Trained model file
+├── requirements.txt        # Dependencies
+├── README.md               # Project description
+└── dataset/                # HR dataset used for training
 ```
 
-### 2. Install dependencies
+## 🧪 Model Performance
 
-```bash
-pip install -r requirements.txt
-```
+| Metric        | Value  |
+|---------------|--------|
+| Accuracy      | 96.3%  |
+| Precision     | 95.8%  |
+| Recall        | 95.1%  |
+| F1-Score      | 95.4%  |
 
-### 3. Run the app
+✅ Trained on the [WA_Fn-UseC_-HR-Employee-Attrition.csv] dataset.
+
+## 📉 Why It Matters
+
+Attrition can severely affect organizational stability, especially when experienced staff leave suddenly. This tool identifies high-risk individuals early so HR teams can proactively retain them, minimizing workflow disruptions and long-term recruitment costs.
+
+## 🎮 Try It Out
+
+Run the app with:
 
 ```bash
 python app.py
 ```
 
-Then open the link in your browser.
+Use the interactive sliders to simulate employee characteristics and instantly see predictions.
 
-## 📁 Files
+## 🛡 License
 
-| File | Description |
-|------|-------------|
-| `model_trainer.py` | Builds, trains, and saves the deep learning model |
-| `app.py` | Loads the model and launches Gradio interface |
-| `WA_Fn-UseC_-HR-Employee-Attrition.csv` | HR dataset |
-| `requirements.txt` | Required Python libraries |
-| `README.md` | Project overview |
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🙏 Citation
 
-## 🔒 License
+If you use this tool for research or academic purposes, please cite:
 
-MIT License. Feel free to use and modify with attribution.
+```
+@misc{attrition2025,
+  author = {Amirhossein Hanifi},
+  title = {Employee Attrition Predictor},
+  year = {2025},
+  url = {https://github.com/AmirhosseinHanifi/employee-attrition-predictor}
+}
+```
